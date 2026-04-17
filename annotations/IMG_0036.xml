@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>2151667</id>
+      <name>video_36</name>
+      <size>49</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-04-05 18:10:01.284647+00:00</created>
+      <updated>2026-04-05 18:26:40.750815+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>48</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>3825330</id>
+          <start>0</start>
+          <stop>48</stop>
+          <url>https://app.cvat.ai/api/tasks/2151667/dataset/export/api/jobs/3826390</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>emily6</username>
+        <email>emily.uehling@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>baseball</name>
+          <color>#f20779</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>moving</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+      <original_size>
+        <width>2160</width>
+        <height>3840</height>
+      </original_size>
+      <source>IMG_0036.mov</source>
+    </task>
+    <dumped>2026-04-05 18:28:53.791218+00:00</dumped>
+  </meta>
+  <track id="0" label="baseball" source="manual">
+    <box frame="26" keyframe="1" outside="0" occluded="0" xtl="1671.03" ytl="1551.32" xbr="1957.15" ybr="1679.32" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+    <box frame="27" keyframe="1" outside="0" occluded="0" xtl="1488.83" ytl="1471.89" xbr="1896.45" ybr="1679.29" rotation="359.40" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+    <box frame="28" keyframe="1" outside="1" occluded="0" xtl="1488.83" ytl="1471.89" xbr="1896.45" ybr="1679.29" rotation="359.40" z_order="0">
+      <attribute name="moving">true</attribute>
+    </box>
+  </track>
+</annotations>
