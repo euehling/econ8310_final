@@ -154,9 +154,10 @@ def train_one_epoch(
         loss.backward()
         optimizer.step()
 
+        # FIX: .detach() removes gradient tracking before converting to float
         for k, v in loss_dict.items():
-            running[k] = running.get(k, 0.0) + float(v)
-        running["total"] = running.get("total", 0.0) + float(loss)
+            running[k] = running.get(k, 0.0) + float(v.detach())
+        running["total"] = running.get("total", 0.0) + float(loss.detach())
         n_batches += 1
 
         if (i + 1) % print_every == 0:
